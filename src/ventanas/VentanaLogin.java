@@ -128,7 +128,7 @@ public class VentanaLogin extends JFrame {
        // JOptionPane.showMessageDialog(this, "Entro a login");
         try {
             Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");
-            Connection conn = DriverManager.getConnection("jdbc:ucanaccess://C:/Users/RIO SALADO SRL/Documents/Database2.accdb");
+            Connection conn = DriverManager.getConnection("jdbc:ucanaccess://C:/Users/MAURICIO/Desktop/Database2.accdb");
 
             String sql = "SELECT * FROM Usuarios WHERE usuario = ? AND clave = ?";
             PreparedStatement stmt = conn.prepareStatement(sql);
